@@ -1,0 +1,36 @@
+.header {
+  height: 50vh;
+  background-image: url('https://27.edubish.kg/wp-content/uploads/sites/188/2019/01/img-20190123-wa0002.jpg');
+  background-size: cover;
+  background-position: center;
+  .container {
+    width: 98%;
+    margin: 0 !important;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    .logo__content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .logo {
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 1;
+        img {
+          width: 150px;
+          padding: 10px;
+          height: 140px;
+        }
+      }
+      .sosh {
+        padding: 11px 18px 11px 60px;
+        border-radius: 0 15px 15px 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        margin-left: -40px;
+        z-index: 0;
+      }
+    }
+  }
+}

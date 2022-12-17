@@ -1,0 +1,39 @@
+.footer {
+  .phone {
+    padding: 0;
+  }
+  a {
+    color: #eee;
+    transition: 0.3s;
+    padding: 10px;
+    &:hover {
+      background: rgba(84, 84, 84, 0.081);
+      color: rgb(226, 226, 226);
+    }
+  }
+  font-size: 14px;
+  color: #eee;
+  &__head {
+    padding-top: 25px;
+    background: #292929;
+    .head_width {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 12vh;
+    }
+  }
+  &__down {
+    background: #151515;
+    .down__width {
+      height: 7vh;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
