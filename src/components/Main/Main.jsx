@@ -2,7 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Main.scss';
-import CarouselApp from './Carousel';
+// import CarouselApp from './Carousel';
+import { MySwiper } from '../../UI/MySwiper';
 
 function Main() {
   //   const [item, setItem] = useState([]);
@@ -18,7 +19,8 @@ function Main() {
   //   }, []);
   return (
     <div className="main">
-      <CarouselApp />
+      <MySwiper />
+      {/* <CarouselApp /> */}
       {/* {item.map((item) => item.id)} */}
     </div>
   );

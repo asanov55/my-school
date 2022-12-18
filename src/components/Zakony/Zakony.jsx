@@ -87,9 +87,11 @@ export const Zakony = () => {
       </div>
       <div className="zakony__href">
         {zakony.map((zakon, index) => (
-          <a href={zakon.src} key={index} target="_blank">
-            {zakon.title}
-          </a>
+          <div>
+            <a href={zakon.src} key={index} target="_blank">
+              {zakon.title}
+            </a>
+          </div>
         ))}
       </div>
     </div>

@@ -1,5 +1,36 @@
 .about {
-  height: 70vh;
-  width: 90%;
+  text-align: center;
+  font-style: italic;
+  width: 98%;
   margin: 0 auto;
+  span {
+    margin-left: 20px;
+  }
+  &__name {
+    padding: 40px 0 0 0;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  &__history {
+    color: crimson;
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .main {
+    text-align: left;
+    &__head_title {
+      color: rgb(153, 35, 35);
+      width: 23%;
+    }
+    &__gorkiy {
+      margin: 50px 0;
+      font-size: 20px;
+      color: rgb(130, 29, 29);
+      font-weight: bold;
+    }
+    &__title {
+      color: rgb(119, 27, 27);
+    }
+  }
 }

@@ -17,6 +17,9 @@
       border: none;
       margin-bottom: 20px;
       width: 32%;
+      img {
+        width: 100%;
+      }
       img:hover {
         cursor: pointer;
         opacity: 0.8;
