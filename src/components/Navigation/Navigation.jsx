@@ -23,7 +23,7 @@ export const Navigation = () => {
     },
     { id: 7, route: 'accreditation', head: 'Аккредитация' },
     { id: 8, route: 'legal-framework', head: 'Нормативно-правовая база' },
-    { id: 9, route: 'more', head: 'Еще' },
+    // { id: 9, route: 'more', head: 'Еще' },
   ];
   const hoverItems = [
     { link: 'О нас', route: 'about-us' },
@@ -39,18 +39,6 @@ export const Navigation = () => {
       <div className={styles.navigation}>
         <div className={styles.navigation__items}>
           <div className={styles.navigation__left_site}>
-            <svg
-              className={styles.drop__down}
-              onClick={() => setActive(!active)}
-              width="10"
-              height="6"
-              viewBox="0 0 10 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M5 5.5L0 0.5H10L5 5.5Z" fill="#fff" />
-            </svg>
-
             {items.map((item) => (
               <div key={item.id}>
                 <Link className={styles.links} to={`/${item.route}`}>
@@ -58,6 +46,19 @@ export const Navigation = () => {
                 </Link>
               </div>
             ))}
+            <span className={styles.links} onClick={() => setActive(!active)}>
+              Еще
+              <svg
+                className={styles.drop__down}
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 5.5L0 0.5H10L5 5.5Z" fill="#fff" />
+              </svg>
+            </span>
           </div>
 
           <div className={styles.navigation__rigth_site}>
@@ -67,8 +68,8 @@ export const Navigation = () => {
         </div>
       </div>
       <div className={active ? styles.active : styles.act}>
-        {hoverItems.map((item) => (
-          <div className={styles.activeLinks} key={item.id}>
+        {hoverItems.map((item, index) => (
+          <div className={styles.activeLinks} key={index}>
             <Link to={`/${item.route}`}>{item.link}</Link>
           </div>
         ))}
