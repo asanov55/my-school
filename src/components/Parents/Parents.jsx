@@ -44,6 +44,8 @@ const Parents = () => {
       src: 'https://27.edubish.kg/wp-content/uploads/sites/188/2021/11/podrostkovyy-vozrast.pdf',
     },
   ];
+
+  document.title = 'Parents';
   return (
     <div className={style.parents}>
       <div className={style.parent}>
@@ -55,13 +57,8 @@ const Parents = () => {
       </div>
       <div className={style.vajno}>
         {parents.map((parent, index) => (
-          <div className={style.href}>
-            <a
-              className={style.a}
-              key={index}
-              href={parent.src}
-              target="_blank"
-            >
+          <div key={index} className={style.href}>
+            <a className={style.a} href={parent.src} target="_blank">
               {parent.name}
             </a>
           </div>
