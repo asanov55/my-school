@@ -6,6 +6,7 @@ import { Gallery } from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
 import { Lizenzia } from './components/Lizenzia/Lizenzia';
 import Main from './components/Main/Main';
+import { Metod } from './components/Metod/Metod';
 import { Navigation } from './components/Navigation/Navigation';
 import Parents from './components/Parents/Parents';
 import { TimeTable } from './components/TimeTable/TimeTable';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/timetable" element={<TimeTable />} />
         <Route path="/for-parents" element={<Parents />} />
+        <Route path="/methodological-service" element={<Metod />} />
       </Routes>
       <Footer />
     </div>
