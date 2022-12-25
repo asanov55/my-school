@@ -6,21 +6,10 @@ import './Main.scss';
 import { MySwiper } from '../../UI/MySwiper';
 
 function Main() {
-  // const [item, setItem] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get('http://127.0.0.1:8000/api/posts/')
-  //     .then(({ data }) => {
-  //       setItem([...item, data]);
-  //     })
-  //     .catch((error) => console.log(error))
-  //     .finally(console.log('loading...'));
-  // }, []);
   return (
     <div className="main">
       <MySwiper />
       {/* <CarouselApp /> */}
-      {/* {item.map((item) => item)} */}
     </div>
   );
 }
